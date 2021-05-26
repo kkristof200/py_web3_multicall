@@ -40,7 +40,7 @@ class Multicall(WrappedContract):
     def aggregate(
         self,
         calls: List[ContractFunction]
-    ) -> List[List[any]]:
+    ) -> AggregateResult:
         funcs = [Function(call) for call in calls]
 
         block_number, outputs = self.functions.aggregate(
