@@ -10,7 +10,7 @@ multicall_result = multicall.aggregate([
     busd.symbol_method(),
     busd.decimals_method(),
     busd.total_supply_method(),
-    busd.balance_of_method('0xA426d6e651aAFcd6e26865d65286c64f34714428')
+    busd.balance_of_method('YOUR_ADDRESS')
 ])
 
 multicall_result.jsonprint()
@@ -57,7 +57,7 @@ multicall_result.jsonprint()
 #             "inputs": [
 #                 {
 #                     "name": "account",
-#                     "value": "0xA426d6e651aAFcd6e26865d65286c64f34714428",
+#                     "value": "YOUR_ADDRESS",
 #                     "solidity_type": "address"
 #                 }
 #             ],
