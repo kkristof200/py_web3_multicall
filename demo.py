@@ -10,7 +10,7 @@ multicall_result = multicall.aggregate([
     busd.symbol_method(),
     busd.decimals_method(),
     busd.total_supply_method(),
-    busd.balance_of_method('YOUR_ADDRESS')
+    # busd.balance_of_method('YOUR_ADDRESS')
 ])
 
 multicall_result.jsonprint()
